@@ -24,13 +24,14 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@={nama}"
         android:id="@+id/editTextNama"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Hasil"
-        android:id="@+id/textViewHasil"/>
+        android:text='@{nama==null||nama.equals("") ?  "" : "Nama Anda:" +nama}'
+        />
     </LinearLayout>
 
 </layout>
